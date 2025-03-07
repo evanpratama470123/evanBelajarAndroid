@@ -37,7 +37,7 @@ fun MainScreen() {
         topBar = {
             TopAppBar(
                 title = {
-                    Text(text = stringResource(id = R.string.app_name))
+                    Text(text = stringResource(id = R.string.aplikasi))
                 },
                 colors = TopAppBarDefaults.mediumTopAppBarColors(
                     containerColor = MaterialTheme.colorScheme.primaryContainer,
@@ -45,14 +45,15 @@ fun MainScreen() {
                 )
             )
         }
-    ) { innerPadding -> ScreenContent(Modifier.padding(innerPadding))
+    ) { innerPadding ->
+        ScreenContent(Modifier.padding(innerPadding))
     }
 }
 
 @Composable
 fun ScreenContent(modifier: Modifier = Modifier) {
     Text(
-        text = "Hello Android",
+        text = "Hello Android!",
         modifier = modifier
     )
 }
